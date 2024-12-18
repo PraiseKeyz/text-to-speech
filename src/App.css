@@ -1,0 +1,39 @@
+body {
+  background-color: #0A192F;
+  color: #ffff;
+}
+.App {
+  text-align: center;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  max-width: 80%;
+  border-radius: 5px;
+  outline: 1px solid #ee0942;
+  resize: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="range"] {
+  width: 200px;
+}
+select {
+  max-width: 100%;
+}
