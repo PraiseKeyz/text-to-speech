@@ -4,9 +4,11 @@ body {
 }
 .App {
   text-align: center;
-  margin: 20px;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 textarea {
@@ -14,10 +16,15 @@ textarea {
   font-size: 16px;
   max-width: 80%;
   border-radius: 5px;
-  outline: 1px solid #ee0942;
+  outline: 1px solid #ffff;
   resize: none;
+  color: #ffff;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #030d1b;
 }
-
+textarea::placeholder {
+  font-family: 'Courier New', Courier, monospace;
+}
 button {
   background-color: #4CAF50;
   color: white;
@@ -34,6 +41,19 @@ button:hover {
 input[type="range"] {
   width: 200px;
 }
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+}
 select {
-  max-width: 100%;
+  max-width: 80%;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .copyright {
+    position: initial;
+    bottom: auto;
+    left: auto;
+  }
 }

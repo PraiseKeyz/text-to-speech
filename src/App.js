@@ -80,11 +80,13 @@ function App() {
     };
   };
 
+
+  const downloadFileName = text;
   const handleDownload = () => {
     if (audioUrl) {
       const link = document.createElement('a');
       link.href = audioUrl;
-      link.download = 'generated_speech.wav'; // You can change the file extension if necessary
+      link.download = `${downloadFileName}.wav`;
       link.click();
       setHasDownloaded(true);
     }
@@ -140,6 +142,12 @@ function App() {
           Download Speech
         </button>
       )}
+      <div className='copyright'>
+      <p>Developed with &#10084;&#65039; by Dev Praisekeyz.</p>
+      <p>&#169; 2024</p>
+      </div>
+
+      
     </div>
   );
 };
