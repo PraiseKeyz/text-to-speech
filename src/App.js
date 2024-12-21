@@ -180,7 +180,12 @@ function App() {
 
     setIsGenerating(true);
 
-    const requestData = JSON.stringify({ text });
+    // const requestData = JSON.stringify({ text });
+    const requestData = JSON.stringify({
+      text,
+      voice: "en-US_Male", // Example: Adjust based on API documentation
+    });
+    
 
     try {
       const response = await fetch('https://large-text-to-speech.p.rapidapi.com/tts', {
